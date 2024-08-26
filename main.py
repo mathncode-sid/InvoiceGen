@@ -30,7 +30,8 @@ for filepath in filepaths:
     pdf.cell(w=70, h=8, txt=columns[1], border=1)
     pdf.cell(w=30, h=8, txt=columns[2], border=1)
     pdf.cell(w=30, h=8, txt=columns[3], border=1)
-    pdf.cell(w=30, h=8, txt=columns[4], border=1, ln=1)
+    pdf.cell(w=30, h=8, txt=columns[4], border=1)
+    pdf.ln()
 
     # Add rows to the table
     for index, row in df.iterrows():
